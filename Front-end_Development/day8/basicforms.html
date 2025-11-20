@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece Test</title>
+</head>
+
+<body>
+    <header>
+        <h1>Are you a certified One Piece Fan?</h1>
+        <p>Answer this form to find out!</p>
+        <hr>
+    </header>
+
+    <main>
+        <article>
+            <form>
+                <fieldset>
+                    <legend><strong>Contact details:</strong></legend> 
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="fname1" placeholder="Enter your first name" required>
+                        <br><br>
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="lname1" placeholder="Enter your last name" required>
+                        <br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email1" placeholder="e.g., name@gmail.com" required>
+                
+                </fieldset>
+
+                <br>
+                <fieldset>
+                    <legend><strong>Questions:</strong></legend>
+                    <p>1. What is the name of Luffy's pirate crew?</p>
+                
+                    <label><input type="radio" name="crew" value="Straw Hat Pirates" required> Straw Hat Pirates</label>
+                    <label><input type="radio" name="crew" value="Roger Pirates" required> Roger Pirates</label>
+                    <label><input type="radio" name="crew" value="Red Hat Pirates" required> Red Hat Pirates</label>
+
+                    <p>2. Who is the doctor of the Straw Hat Pirates?</p>
+                    <label><input type="radio" id="brook" name="doc" value="Brook" required>Brook</label> 
+                    <label><input type="radio" id="chopper" name="doc" value="Chopper" required>Chopper</label>
+                    <label><input type="radio" id="nami" name="doc" value="Nami" required>Nami</label>
+
+                    <p>3. What month and year did One Piece anime first aired?</p>
+                    <label for="year">Month & year</label>
+                    <input type="month" id="year" name="year1" required>
+
+                    <p>4. Who is your favorite Straw Hat member and why?</p>
+                    <label for="members">Favorite character</label>
+                    <select id="members" name="strawhats" required>
+                        <option value="Select one" selected>--Select one--</option>
+                        <option value="Luffy">Luffy</option>
+                        <option value="Zoro">Zoro</option>
+                        <option value="Nami">Nami</option>
+                        <option value="Usopp">Usopp</option>
+                        <option value="Sanji">Sanji</option>
+                        <option value="Chopper">Chopper</option>
+                        <option value="Franky">Franky</option>
+                        <option value="Brook">Brook</option>
+                        <option value="Jimbei">Jimbei</option>
+                    </select><br>
+
+                   <label for="fav_character"><small>Why(optional)</small></label>
+                   <textarea id="fav_character" name="fav" rows="10" cols = "45" placeholder="Tell us why this character is your favorite"></textarea> 
+                    
+                   <p>5. What is Nami's favorite color?</p>
+
+                   <label for="color_name">Color</label>
+                   <input type="text" id="color_name" name="color1" placeholder="Enter a color" required><br>
+                   <label for="color">Pick equivalent color</label>
+                   <input type="color" id="color_wheel" name="color1"><br><br>
+
+                   <input type="submit" value="Submit">
+                   <input type="reset" value="Reset">
+
+                </fieldset>  
+            </form>
+        </article>
+    </main>
+</body>
+</html>
