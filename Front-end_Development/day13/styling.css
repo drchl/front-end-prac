@@ -1,0 +1,72 @@
+*{
+    background-color:beige;
+}
+
+body{
+    font-family:Sans-serif;
+}
+
+.brown-shadow{
+    color:rgb(151, 84, 18);
+    text-shadow:2px 2px 5px;
+}
+/*Serif Fonts*/
+.TNR{font-family:"Times New Roman",Times,serif;}
+.Georgia{font-family:Georgia,serif;}
+.Garamond{font-family:Garamond,serif;}
+
+/*Sans-serif Fonts*/
+.Arial{font-family:Arial,Helvetica,sans-serif;}
+.Verdana{font-family:Verdana,Tahoma,sans-serif;}
+.Helvetica{font-family:Helvetica,"Trebuchet MS",sans-serif;}
+
+/*Monospace Fonts*/
+.Courier{font-family:"Courier New",Courier,monospace;}
+.Lucida{font-family:"Lucida Console",monospace;}
+.Monaco{font-family:Monaco,monospace;}
+
+/*Cursive Fonts*/
+.BrushScript{font-family:"Brush Script MT",cursive;}
+.Lucida{font-family:"Lucida Handwriting",cursive;}
+
+/*Fantasy Fonts*/
+.Copperplate{font-family:Copperplate,Papyrus,fantasy;}
+.Papyrus{font-family:Papyrus,Copperplate,fantasy;}
+
+.container{
+    width:600px;
+    height:auto;
+    padding:20px;
+    margin:30px;
+    border-radius:6px;
+    background-color:rgb(208, 187, 160);
+
+}
+
+.container p{ 
+    background-color:rgb(208, 187, 160);
+    margin-top:20px;
+    padding:0;
+
+}
+
+/*Alignment*/
+.align-right{text-align:right;}
+.align-left{text-align:left;}
+.align-center{text-align:center;}
+.align-justify{text-align:justify;}
+
+/*Indentation*/
+.right-indent{text-indent:20px;}
+.left-indent{text-indent:-5px;}
+
+/*Spacing*/
+.letter-spacing{letter-spacing:10px;}
+.line-height{line-height:1.5;}
+.word-spacing{word-spacing:20px;}
+
+/*White Space*/
+.nowrap{white-space:nowrap;}
+.pre{white-space:pre;}
+.pre-line{white-space:pre-line;}
+.pre-wrap{white-space:pre-wrap;}
