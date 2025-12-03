@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    background-color:beige;
+    font-family: Arial,sans-serif
+}
+
+.grid-container{
+    display:grid;
+    grid-template-areas:
+        "sidebar content content"
+        "sidebar content content"
+        "sidebar content content"
+        "footer footer footer";
+    background-color:pink;
+    text-align:center;
+    height:800px;
+    border:2px solid rgb(255, 0, 157);
+    gap:5px;
+       margin:20px;
+}
+
+.grid-container .item{
+    padding:10px;
+    
+}
+
+.sidebar{
+    grid-area:sidebar;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    background:rgb(234, 123, 142);
+}
+
+.sidebar li{
+    list-style:none;
+    margin:30px 10px;
+}
+.content{
+    grid-area:content;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    background-color:rgb(182, 86, 102);
+   
+}
+
+.content img{
+    width:200px;
+    height:auto;
+}
+
+.footer{
+    grid-area:footer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-top:1px solid black;
+  }
+
+/* Mobile-first base styles (already your current CSS) */
+
+/* Tablet / medium screens: stack sidebar on top or adjust columns */
+@media (max-width: 992px) {
+    .grid-container {
+        grid-template-areas:
+            "sidebar sidebar sidebar"
+            "content content content"
+            "footer footer footer";
+        height: auto;
+    }
+
+    .sidebar li {
+        margin: 20px 5px;
+    }
+
+    .sidebar ul {
+        display:inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:30px;
+        justify-content: center;  /* optional, center items */
+    }
+
+    .content img {
+        width: 240px;
+    }
+}
+
+/* Small screens / phones */
+@media (max-width: 576px) {
+    .grid-container {
+        grid-template-areas:
+            "sidebar"
+            "content"
+            "footer";
+        gap: 10px;
+        margin: 10px;
+    }
+
+    .sidebar {
+        flex-direction: row;     
+        flex-wrap: wrap;
+    }
+
+    .sidebar ul {
+        display:inline-flex;
+        gap:0px;
+        flex-direction: row;
+        justify-content: center;  
+    }
+
+    .sidebar li {
+        margin: 10px 5px;
+        font-size: 14px;
+    }
+
+    .content img {
+        width: 120px;
+    }
+
+    .content {
+        gap: 10px;
+    }
+}
